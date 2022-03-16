@@ -1,9 +1,10 @@
+import Pagination from "components/Pagination"
 import { defaultMaxListeners } from "events"
 
 function Listing(){
 
     return(
-        <h1> Pagina de listagem</h1>
+        <Pagination />
     )
 }
 

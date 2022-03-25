@@ -3800,3 +3800,101 @@ Caused by: java.io.FileNotFoundException: C:\Users\PC\Documents\GitHub\dsmovie\.
 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
 	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:264)
 	... 16 more
+
+!ENTRY org.eclipse.jface 2 0 2022-03-25 13:17:39.585
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-25 13:17:39.585
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@27478487,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@556e5a1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:22:46.078
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AoeKdRiQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:22:46.079
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.AoeKdRiQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:22:46.079
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:22:46.080
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AoeKdRiQ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:24.845
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:24.845
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@268ee2cd[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:24.846
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.342
+!MESSAGE Boot LS startup time from start to initialized: 5495ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.520
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.hSHPVvgpisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.521
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.521
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.522
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.522
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.523
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.hSHPVvgp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.534
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.541
+!MESSAGE buffering callback sts4.classpath.hSHPVvgp backend false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:30.541
+!MESSAGE executing callback sts4.classpath.hSHPVvgp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:24:32.544
+!MESSAGE executing callback sts4.classpath.hSHPVvgp FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-03-25 13:24:32.544
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:34:13.360
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hSHPVvgp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:34:13.361
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.hSHPVvgp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:34:13.361
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 13:34:13.362
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hSHPVvgp => OK

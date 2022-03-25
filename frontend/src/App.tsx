@@ -1,5 +1,6 @@
 import {
   BrowserRouter,
+  Routes,
   Route
 } from "react-router-dom";
 import Listing from 'pages/Listing';
@@ -10,12 +11,12 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Route>
+      <Routes>
         <Route path="/" element={<Listing />} />
         <Route path="/form">
           <Route path=":movieId" element={<Form />} />
         </Route>
-      </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
